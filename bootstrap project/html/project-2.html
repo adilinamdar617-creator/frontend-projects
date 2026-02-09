@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Portfolio - Bootstrap Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                url('https://picsum.photos/1200/500?tech') center/cover no-repeat;
+            color: white;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        /* Cards */
+        .card:hover {
+            transform: translateY(-6px);
+            transition: all 0.3s ease;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0d6efd;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        /* Custom theme color */
+        :root {
+            --primary-color: #0d6efd;
+        }
+
+        .text-primary {
+            color: var(--primary-color) !important;
+        }
+
+        .bg-primary {
+            background-color: var(--primary-color) !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ========== Navbar ========== -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary p-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">MyPortfolio</a>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ========== Hero Section ========== -->
+    <section class="hero">
+        <h1>Hello, I'm a Web Development Student</h1>
+        <p>Learning Bootstrap, HTML, and CSS by building projects 🚀</p>
+        <a href="#projects" class="btn btn-light mt-3 fw-semibold">View My Work</a>
+    </section>
+
+    <!-- ========== Skills Section ========== -->
+    <section id="skills" class="container text-center py-5">
+        <h2 class="fw-bold mb-4 text-primary">My Skills</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card p-3 shadow-sm border-0">
+                    <h4>HTML5</h4>
+                    <p>Structuring modern web pages with semantic markup.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3 shadow-sm border-0">
+                    <h4>CSS3</h4>
+                    <p>Styling pages beautifully using classes and layouts.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3 shadow-sm border-0">
+                    <h4>Bootstrap</h4>
+                    <p>Designing responsive layouts with ease and speed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== Projects Section ========== -->
+    <section id="projects" class="container py-5">
+        <h2 class="fw-bold text-center text-primary mb-4">My Projects</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="https://picsum.photos/300/200?1" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Portfolio Website</h5>
+                        <p class="card-text">Created a responsive portfolio layout using Bootstrap grid system.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="https://picsum.photos/301/200?2" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Landing Page</h5>
+                        <p class="card-text">Built an elegant product landing page with sections and cards.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="https://picsum.photos/302/200?3" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Course Dashboard</h5>
+                        <p class="card-text">Designed a simple learning dashboard for practice exercises.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== Contact Section ========== -->
+    <section id="contact" class="container py-5 text-center">
+        <h2 class="fw-bold text-primary mb-4">Contact Me</h2>
+        <p class="mb-4">Feel free to reach out for collaboration or queries!</p>
+        <form class="w-75 mx-auto text-start">
+            <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Message</label>
+                <textarea class="form-control" rows="4" placeholder="Your message"></textarea>
+            </div>
+            <button class="btn btn-primary">Submit</button>
+        </form>
+    </section>
+
+    <!-- ========== Footer ========== -->
+    <footer>
+        <p>&copy; 2025 MyPortfolio | Designed for Bootstrap Learning</p>
+    </footer>
+
+</body>
+
+</html>

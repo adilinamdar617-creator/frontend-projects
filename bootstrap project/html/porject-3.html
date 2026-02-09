@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureBank - Your Trusted Digital Bank</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 50, 0.6), rgba(0, 0, 70, 0.6)),
+                url('https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            color: white;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Cards Hover */
+        .card:hover {
+            transform: translateY(-6px);
+            transition: 0.3s ease;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #001F54;
+            color: #ffffff;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #adb5bd;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        /* Theme Color */
+        .text-bank {
+            color: #001F54;
+        }
+
+        .bg-bank {
+            background-color: #001F54;
+        }
+
+        .btn-bank {
+            background-color: #001F54;
+            color: white;
+            border-radius: 30px;
+        }
+
+        .btn-bank:hover {
+            background-color: #0033a0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ================= Navbar ================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-bank shadow-sm py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">SecureBank</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="btn btn-light btn-sm ms-2" href="#">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= Hero ================= -->
+    <section class="hero">
+        <h1>Welcome to SecureBank</h1>
+        <p>Your Trusted Digital Partner for Smart Banking Solutions 💳</p>
+        <a href="#services" class="btn btn-bank btn-lg fw-semibold">Explore Services</a>
+    </section>
+
+    <!-- ================= Services ================= -->
+    <section id="services" class="container py-5 text-center">
+        <h2 class="fw-bold text-bank mb-4">Our Banking Services</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card p-3 border-0 shadow-sm">
+                    <img src="https://cdn-icons-png.flaticon.com/512/483/483361.png" class="w-25 mx-auto" alt="">
+                    <h5 class="mt-3">Savings Account</h5>
+                    <p>Open an instant digital savings account and enjoy easy fund transfers and rewards.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3 border-0 shadow-sm">
+                    <img src="https://cdn-icons-png.flaticon.com/512/992/992651.png" class="w-25 mx-auto" alt="">
+                    <h5 class="mt-3">Credit Cards</h5>
+                    <p>Enjoy cashback, travel rewards, and zero-annual fee options for all lifestyles.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3 border-0 shadow-sm">
+                    <img src="https://cdn-icons-png.flaticon.com/512/743/743131.png" class="w-25 mx-auto" alt="">
+                    <h5 class="mt-3">Loans & EMI</h5>
+                    <p>Get instant personal, car, or home loans with low interest and quick approvals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= About ================= -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-md-6">
+                    <img src="../Img/b1.jpg" class="img-fluid rounded shadow-sm" alt="Bank Office">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="fw-bold text-bank">About SecureBank</h2>
+                    <p>SecureBank is an AI-enabled digital bank providing modern financial services for today’s
+                        generation.
+                        Our mission is to simplify finance, empower savings, and deliver security-first digital
+                        experiences.</p>
+                    <ul>
+                        <li>24x7 Customer Support</li>
+                        <li>Secure Payment Systems</li>
+                        <li>Global Transaction Network</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-bank mt-2">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= Contact / Form ================= -->
+    <section id="contact" class="container py-5 text-center">
+        <h2 class="fw-bold text-bank mb-3">Contact & Apply</h2>
+        <p>Apply for your digital account or reach out for inquiries.</p>
+        <form class="text-start mx-auto" style="max-width: 600px;">
+            <div class="mb-3">
+                <label class="form-label">Full Name</label>
+                <input type="text" class="form-control" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email ID</label>
+                <input type="email" class="form-control" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Service Interested In</label>
+                <select class="form-select">
+                    <option>Savings Account</option>
+                    <option>Credit Card</option>
+                    <option>Loan</option>
+                </select>
+            </div>
+            <button class="btn btn-bank w-100">Submit</button>
+        </form>
+    </section>
+
+    <!-- ================= Footer ================= -->
+    <footer>
+        <div class="container d-flex justify-content-between flex-wrap">
+            <div>
+                <h5>SecureBank</h5>
+                <p>Your Trusted Partner in Digital Banking.</p>
+            </div>
+            <div>
+                <h6>Quick Links</h6>
+                <a href="#">Home</a> •
+                <a href="#">Services</a> •
+                <a href="#">Support</a>
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            <p class="mb-0">&copy; 2025 SecureBank | All Rights Reserved</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

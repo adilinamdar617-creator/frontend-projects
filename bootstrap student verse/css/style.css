@@ -1,0 +1,220 @@
+
+body{
+    background-color: rgb(247, 247, 247);
+
+}
+nav{
+    background-color: rgb(77, 185, 228);
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+.cardbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.card{
+    width: 350px;
+    box-shadow: 1px  2px 12px rgb(56, 56, 56);
+}
+.card img{
+    width: 100%;
+}
+.head{
+    color: blue;
+}
+.cardtext a{
+    width: 120px;
+    height: 40px;
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+    background-color: green;
+    border: none;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 12px;
+}
+.cardtext{
+    padding: 14px;
+    margin-bottom: 10px;
+
+}
+.cardtext h1{
+    font-size: 22px;
+}
+.cardtext p{
+    font-size: 18px;
+}
+#home{
+    background-color: white;
+}
+.coursetext h1{
+    font-size: 44px;
+    font-weight: bold;
+}
+.coursetext a{
+    background-color: rgb(248, 186, 29);
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 12px;
+}
+.nav-btn a{
+    background-color: gray;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+.navbar-brand{
+    font-size: 28px;
+}
+.coverbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+.cover{
+    padding: 12px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 1px  2px 12px rgb(87, 86, 86);
+
+}
+.cover h1{
+    font-size: 20px;
+}
+.cover a{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+.head1 {
+    text-align: center;
+    color: gray;
+    margin-bottom: 12px;
+
+}
+.range{
+    margin-bottom: 30px;
+}
+.rangebar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    border: 1px solid black;
+    overflow: hidden;
+    margin-bottom: 12px;
+
+
+}
+.left{
+    width: 70%;
+    background-color: green;
+    text-align: center;
+}
+.right{
+    width: 30%;
+}
+.css{
+    width: 40%;
+    background-color: skyblue;
+    color: white;
+}
+.css1{
+    width: 60%;
+}
+.js{
+    width: 20%;
+    background-color: red;
+    color: white;
+}
+.js1{
+    width: 80%;
+}
+.head3{
+    text-align: center;
+
+}
+.head3 h1{
+    font-weight: bold;
+    color: blue;
+    font-size: 30px;
+}
+.form{
+    width: 50%;
+}
+.head4{
+    text-align: center;
+    font-weight: bold;
+    color: red;
+}
+label{
+    margin-bottom: 4px;
+}
+input{
+    margin-bottom: 5px;
+}
+textarea{
+    height: 100px;
+    margin-bottom: 5px;
+}
+#form-btn{
+    background-color: rgb(249, 195, 58);
+    color: black;
+}
+#footer{
+    text-align: center;
+    font-size: 22px;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    font-weight: bold;
+    
+}
+
+.join-form{
+    width: 40%;
+    margin: 30px auto;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 1px  2px 12px rgb(87, 86, 86);
+
+}
+.join-form h1{
+    text-align: center;
+    color: rgb(251, 197, 61);
+    margin-bottom: 16px;
+    font-size: 30px;
+}
+.join-form label{
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+.join-form input{
+    margin-bottom: 10px;
+}
+.join-form button{
+    width: 100%;
+    margin-top: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: green;
+    color: white;
+    padding: 8px;
+}

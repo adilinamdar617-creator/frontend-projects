@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - Learnify</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./Assets/8d8916bfd0f682977d7cdf4213decf1e.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="main-style.css">
+  <style>
+    /* Loader */
+    #pageLoader {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: #0d6efd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 99999;
+    }
+    #pageLoader .loader {
+      border: 5px solid #f3f3f3;
+      border-top: 5px solid #fff;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    /* Contact Hero */
+    .contact-hero {
+      background-color: #0d6efd;
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+    /* Contact Form */
+    .contact-form {
+      max-width: 600px;
+      margin: 40px auto;
+      background-color: #f8f9fa;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+    .contact-form h2 { margin-bottom: 20px; }
+    .contact-form .btn-primary { background-color: #0d6efd; border: none; }
+    .contact-form .btn-primary:hover { background-color: #0b5ed7; }
+  </style>
+</head>
+<body>
+  <!-- Loader -->
+  <div id="pageLoader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="home.html">
+        <img src="./Assets/8d8916bfd0f682977d7cdf4213decf1e.png" alt="Logo" width="30">
+        Learnify
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="new-htmlfile.html">HTML</a></li>
+          <li class="nav-item"><a class="nav-link" href="cssfile.html">CSS</a></li>
+          <li class="nav-item"><a class="nav-link" href="jsfile.html">JavaScript</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="contact-hero">
+    <div class="container">
+      <h1>Contact Learnify</h1>
+      <p>Have questions or suggestions? We’d love to hear from you!</p>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section>
+    <div class="container">
+      <div class="contact-form">
+        <h2>Get in Touch</h2>
+        <form id="contactForm">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+          </div>
+          <div class="mb-3">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Send Message</button>
+        </form>
+        <div id="formMessage" class="mt-3"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer mt-5 bg-dark text-white py-4">
+    <div class="container text-center">
+      © 2026 LearnCode. All Rights Reserved.
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Page JS -->
+  <script>
+    // Loader
+    window.addEventListener("load", () => {
+      const loader = document.getElementById("pageLoader");
+      if(loader){
+        loader.classList.add("hidden");
+        setTimeout(()=>loader.remove(), 500);
+      }
+    });
+
+    // Contact Form Submission (Placeholder)
+    const contactForm = document.getElementById('contactForm');
+    const formMessage = document.getElementById('formMessage');
+
+    contactForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      formMessage.innerHTML = '<div class="alert alert-success">Thank you! Your message has been sent.</div>';
+      contactForm.reset();
+    });
+  </script>
+</body>
+</html>

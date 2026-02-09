@@ -1,0 +1,710 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Learnify</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./Assets/8d8916bfd0f682977d7cdf4213decf1e.png"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <style></style>
+  </head>
+
+  <body>
+ <!-- Loader -->
+<div id="pageLoader">
+  <div class="loader"></div>
+</div>
+
+
+    <!-- YOUR ORIGINAL HEADER -->
+    <section class="header">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <div class="logo">
+            <!-- Logo / Brand -->
+            <img src="./Assets/8d8916bfd0f682977d7cdf4213decf1e.png" alt="" />
+
+            <a class="navbar-brand" id="heading" href="#">Learnify</a>
+          </div>
+
+          <!-- Toggle Button (Mobile) -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Menu -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="log-in.html">Log In</a>
+              </li>
+
+              <br />
+            </ul>
+            <!-- Sidebar Hamburger -->
+<button id="sidebarToggle" class="sidebar-toggle">
+  ☰
+</button>
+
+
+            <form class="d-flex">
+              <div class="input-group">
+                <span
+                  id="search"
+                  class="input-group-text bg-white border-end-0"
+                >
+                  🔍
+                </span>
+                <input
+                  type="search"
+                  class="form-control border-start-0"
+                  placeholder="Search ..."
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="new-nav">
+        <ol class="new-ol">
+          <li>
+            <a href="new-htmlfile.html">HTML</a>
+          </li>
+
+          <li>
+            <a href="cssfile.html">CSS</a>
+          </li>
+
+          <li>
+            <a href="jsfile.html">JavaScript</a>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- SIDEBAR + CONTENT -->
+    <section class="sidebar-main">
+      <div class="sidebar">
+        <!-- SIDEBAR -->
+        <aside class="sidebar-right" id="sidebar">
+          <h2>JavaScript</h2>
+
+          <button class="sidebar-btn active" data-target="home">
+            JavaScript Home
+          </button>
+          <button class="sidebar-btn" data-target="intro">
+            JavaScript Introduction
+          </button>
+          <button class="sidebar-btn" data-target="do">
+            What Does JavaScript Do?
+          </button>
+          <button class="sidebar-btn" data-target="example">
+            JavaScript Example
+          </button>
+          <button class="sidebar-btn" data-target="history">
+            JavaScript History
+          </button>
+        </aside>
+
+        <!-- CONTENT -->
+        <main class="sidebar-left">
+          <section class="content-section active home">
+            <h1 class="first-heading">JavaScript Home</h1>
+            <p class="js-para">
+              JavaScript is the standard language for building web pages.
+               
+
+              <h2># What is JavaScript?</h2> 
+
+              JavaScript (JS) is a programming language used to make websites  <br>
+              **interactive and dynamic**. While HTML gives structure and CSS <br>
+              gives design, JavaScript gives **life** to a webpage. <br />
+
+              It allows a website to react to user actions like: <br />
+
+              * Clicking buttons <br />
+              * Filling forms <br />
+              * Showing alerts <br />
+              * Updating content without refreshing the page <br />
+
+              Without JavaScript, websites would only be static pages (only text <br>
+              and images). --- <br /> 
+
+              <h2># Why JavaScript is Important</h2> 
+
+              Today, almost every website on the internet uses JavaScript. <br>
+              
+              Examples: <br />
+
+              * Login systems <br />
+              * Dark mode toggle <br />
+              * Image sliders <br />
+              * Pop-up messages <br />
+              * Online shopping carts <br />
+              * Live search suggestions <br />
+
+              JavaScript runs directly inside the **browser** (Chrome, Edge, <br>
+              Firefox), so users don’t need to install anything. --- <br /> <br>
+
+              <h2># What JavaScript Can Do</h2>
+
+              JavaScript can: <br />
+
+              * Change HTML content <br />
+              * Change CSS styles <br />
+              * Validate forms (check email, password etc.) <br />
+              * Show/hide elements <br />
+              * Create animations <br />
+              * Communicate with servers (without page reload) <br />
+
+              --- <br /> 
+
+              <h2># Simple Example (in words)</h2> 
+
+              When you click a “Show Password” button and the password becomes <br>
+              visible — that is JavaScript. When a website tells you “Please 
+              enter a valid email” — that is JavaScript. When a menu opens on>
+              mobile — that is JavaScript. --- <br /> 
+
+              <h2># What You Will Learn in This Section</h2> 
+
+              In this JavaScript course you will learn: <br />
+
+              * Variables <br />
+              * Data Types <br />
+              * Operators <br />
+              * Conditions (if / else) <br />
+              * Loops <br />
+              * Functions <br />
+              * Arrays and Objects <br />
+              * Events (click, hover, input) <br />
+              * DOM Manipulation (changing webpage content) <br />
+
+              --- <br /> 
+
+              <h2># JavaScript History (Short)</h2> 
+
+              JavaScript was created in **1995** by **Brendan Eich**. It was <br>
+
+              <h2># Summary</h2> 
+
+              HTML = Structure <br />
+              CSS = Design <br />
+              JavaScript = Functionality <br />
+
+              If HTML is the body and CSS is the clothes, **JavaScript is the <br>
+              brain of the website.** <br>
+            </p>
+          </section>
+
+          <section class="content-section intro">
+            <h1 class="first-heading">JavaScript Introduction</h1>
+            <p class="js-para">
+              JavaScript stands for HyperText Markup Language.
+      
+
+<h2># What is JavaScript?</h2>
+
+JavaScript (JS) is a **high-level programming language** used to control the behavior of a webpage. <br>
+It makes a website interactive instead of just showing static content. <br>
+
+A normal webpage only shows text, images, and design. <br>
+JavaScript allows the page to **think and react** to the user. <br>
+
+Example: <br>
+
+* Clicking a button and something appears <br>
+* Form showing “Password is too short” <br>
+* Menu opening on mobile screen <br>
+* Live search suggestions <br>
+
+All of these are done using JavaScript. <br>
+
+--- <br><br>
+
+<h2># Where JavaScript Runs</h2>
+
+JavaScript mainly runs inside a **web browser** such as: <br>
+
+* Google Chrome <br>
+* Microsoft Edge <br>
+* Firefox <br>
+* Safari <br>
+
+So the user does not need to install anything. <br>
+When a website loads, the browser reads the JavaScript and executes it automatically. <br>
+
+Today JavaScript can also run **outside the browser** using Node.js (used for backend/server). <br>
+
+--- <br> <br>
+
+<h2># How JavaScript Works with HTML & CSS</h2>
+
+Web development uses three main technologies: <br>
+
+* **HTML** → Structure (headings, paragraphs, buttons)  <br>
+* **CSS** → Design (colors, layout, fonts) <br>
+* **JavaScript** → Behavior (actions, logic, events) <br>
+
+JavaScript can: <br>
+
+* Change text <br>
+* Hide/show elements <br>
+* Change colors <br>
+* Create animations <br>
+* Handle user input <br>
+
+--- <br><br>
+
+<h2># Why Learn JavaScript?</h2>
+
+JavaScript is one of the **most important languages** for web developers because: <br>
+
+* Every website uses it <br>
+* Required for Frontend Development  <br>
+* Used in Backend (Node.js) <br>
+* Used in Mobile Apps (React Native) <br>
+* Used in Games and Web Apps <br>
+
+If you want to become a **web developer**, JavaScript is mandatory. <br>
+
+--- <br><br>
+
+<h2># Features of JavaScript</h2>
+
+* Easy to start learning <br>
+* Runs in browser <br>
+* Fast execution <br>
+* Event-based (reacts to user actions)  <br>
+* Works with HTML and CSS <br> 
+* Supports both simple and complex applications <br>
+
+--- <br> <br>
+
+<h2># JavaScript in Real Life Websites</h2>
+
+You already use JavaScript daily: <br>
+
+* YouTube video player  <br>
+* Instagram like button  <br>
+* WhatsApp Web chat updates  <br>
+* Online form validation  <br>
+* E-commerce add-to-cart  <br>
+
+Without JavaScript, these would not work. <br>
+
+--- <br> <br>
+
+<h2># History (Short)</h2> 
+
+JavaScript was created in **1995** by **Brendan Eich** in only 10 days. <br> 
+It was first named **Mocha**, then **LiveScript**, and finally **JavaScript** . <br>
+
+
+Later it became the standard language of the web and is now maintained under the ECMAScript specification. 
+<br>
+--- <br> <br>
+
+<h2># Final Understanding</h2> 
+
+HTML builds the page <br>
+CSS styles the page <br>
+**JavaScript controls the page** <br>
+
+It turns a normal webpage into an **interactive web application**. <br>
+
+            </p>
+          </section>
+
+          <section class="content-section do">
+            <h1 class="first-heading">What Does JavaScript Do?</h1>
+            <p class="js-para">
+              JavaScript creates structure and content for the web. <br>
+              JavaScript is the brain of a website. <br>
+
+If a website were a human: <br>
+
+HTML → structure (bones) 🦴 <br>
+
+CSS → design (clothes & style) 👕 <br>
+
+JavaScript → behavior (brain & actions) 🧠 <br>
+
+HTML only shows content. <br>
+CSS only makes it look nice. <br>
+JavaScript makes things happen. <br>
+
+Main things JavaScript does <br>
+<h2># Makes websites interactive</h2>
+
+Without JS, a website is just a static page (like a photo). <br>
+
+With JS you can: <br>
+
+Click a button → something appears <br>
+
+Open/close sidebar menu <br>
+
+Show popup message <br>
+
+Change text automatically <br>
+
+Example in words: <br>
+You click “Login” → form opens instantly without reloading the page. <br>
+That is JavaScript. <br>
+
+<h2># Changes content without reloading the page</h2>
+
+JS can update the page live. <br>
+
+Examples: <br>
+
+Dark mode / Light mode toggle <br>
+
+Shopping cart item count updates <br>
+
+Notification bell showing new messages <br>
+
+Like button turning red ❤️ <br>
+
+<h2># Validates forms (very important)</h2>
+
+When you enter: <br>
+
+wrong email <br>
+
+empty password <br>
+
+short username <br>
+
+And the website says: <br>
+
+“Please enter a valid email” <br>
+
+That checking is done by JavaScript. <br>
+
+<h2># Controls menus and navigation </h2>
+
+Your sidebar toggle you were making? <br>
+👉 That is a perfect JavaScript job. <br>
+
+JS can: <br>
+
+open navbar <br>
+
+close sidebar <br>
+
+dropdown menu <br>
+
+mobile hamburger menu <br>
+
+<h2># Creates animations</h2>
+
+JS can: <br>
+
+sliders / carousels <br>
+
+image gallery <br>
+
+typing effect <br>
+  
+counters (0 → 1000) <br>
+
+<h2># Talks to servers (fetch data)  </h2>
+
+JS can load data from internet without refreshing page. <br>
+
+Examples: <br>
+
+YouTube loading comments <br>
+
+Instagram loading new posts <br>
+
+Weather app showing live temperature <br>
+
+Google search suggestions while typing <br>
+
+<h2># Builds full applications (not only websites) </h2>
+
+JavaScript is very powerful now. It can create: <br>
+
+Websites <br>
+ 
+Games <br>
+
+Mobile apps (Android/iOS) <br>
+
+Desktop apps (like VS Code, Discord) <br>
+
+Backend servers (Node.js) <br>
+
+In one line: <br>
+
+JavaScript makes a website alive. <br>
+ 
+Without JS → website = poster <br>
+With JS → website = application <br>
+            </p>
+          </section>
+
+          <section class="content-section example">
+            <h1 class="first-heading">JavaScript Example</h1>
+            <p class="js-para">
+              Imagine a learning website. <br>
+
+<h2>A student opens the page and sees a “Click Me” button.</h2>
+
+When the student presses the button: <br>
+
+A message appears on the screen saying “Welcome Learner!” <br>
+
+The page does not refresh <br>
+
+The content changes instantly
+
+The thing that detected the click and showed the message is JavaScript.
+
+<h2>Another real example</h2>
+
+You type your email in a login form. <br>
+
+If the email is wrong: <br>
+
+The website immediately shows: “Invalid email address” <br>
+
+You did not reload the page. <br>
+You did not go to another page. <br>
+The checking happened instantly. <br>
+
+That checking is done by JavaScript. <br>
+
+<h2>Another example (very common)</h2>
+
+On mobile websites you see the three-line menu (☰). <br>
+ 
+When you tap it: <br>
+
+The sidebar opens <br>
+
+Tap again → it closes <br>
+
+HTML created the menu. <br>
+CSS designed it. <br>
+JavaScript made it open and close. <br>
+
+<h2>One more example</h2>
+
+You click Dark Mode on a website: <br>
+
+Background becomes black <br>
+
+Text becomes white <br>
+
+It happens instantly <br>
+
+That action is JavaScript. <br>
+
+<h2>In simple words </h2>
+
+JavaScript is the part of a website that responds to the user’s actions. <br>
+
+Whenever a website: <br>
+
+reacts to a click <br>
+
+shows a message <br>
+
+checks a form <br>
+
+opens a menu <br>
+
+updates content without refreshing <br>
+            </p>
+
+      
+            
+          </section>
+
+          <section class="content-section history">
+            <h1 class="first-heading">JavaScript History</h1>
+            <p class="js-para">Created by Tim Berners-Lee in 1991. <br>
+              <h2># How JavaScript started (1995)</h2>
+
+In the early internet, websites were only HTML pages. <br>
+They could show text and images, but users could not interact with them. Pages were boring and static. <br>
+
+A company called Netscape wanted websites to become interactive. <br>
+So they asked a programmer Brendan Eich to create a new language for web browsers. <br>
+
+He created the first version of JavaScript in just 10 days in 1995. <br>
+
+<h2># First name was NOT JavaScript </h2>
+
+Originally, the language was called Mocha <br>
+Then it was renamed LiveScript <br>
+
+Later Netscape changed the name to JavaScript to make it sound similar to the popular language Java (for marketing). <br>
+But important: <br>
+
+Java and JavaScript are completely different languages. <br>
+
+<h2> Early problems (1996–2000)</h2>
+
+Soon many browsers appeared: <br>
+
+Netscape Navigator <br>
+
+Internet Explorer <br>
+
+Each browser supported JavaScript differently. <br>
+So a script working in one browser often did not work in another. <br>
+Developers had big problems. <br>
+
+To fix this, an official standard was created called ECMAScript. <br>
+From that point, JavaScript followed common rules. <br>
+
+<h2># The big comeback (2005)</h2>
+
+For some years JavaScript was used only for small things like alerts and form checking. <br>
+
+Then a technology called AJAX appeared around 2005. <br>
+Now websites could update information without reloading the page. <br>
+
+Because of this, modern websites were born: <br>
+
+Google Maps <br>
+
+Gmail <br>
+
+Facebook (early versions) <br> 
+
+JavaScript suddenly became very important. <br>
+
+<h2># Modern JavaScript (2009 → Today)</h2>
+
+In 2009, a major change happened: Node.js was introduced. <br>
+
+Before this: <br>
+JavaScript worked only inside the browser. <br> 
+
+After Node.js: <br>
+JavaScript could run on servers and build full applications. <br>
+
+Now JavaScript can create: <br>
+
+websites <br>
+
+mobile apps <br>
+
+games <br>
+
+desktop software <br>
+
+backend servers <br>
+
+Today <br>
+
+Today JavaScript is: <br>
+
+one of the most popular programming languages in the world <br>
+
+used by almost every website on the internet <br>
+ 
+If you open YouTube, Instagram, Amazon, or Google — <br>
+JavaScript is running there. <br>
+
+<h2># Short summary </h2>
+
+1995 → Created by Brendan Eich at Netscape <br>
+
+First names → Mocha, then LiveScript <br>
+ 
+Renamed → JavaScript <br>
+ 
+Standard created → ECMAScript <br>
+
+2005 → Modern interactive websites started <br>
+
+2009 → Node.js made it a full programming language <br>
+
+JavaScript changed websites from static pages into real web applications. <br>
+            </p>
+          </section>
+        </main>
+      </div>
+    </section>
+
+            <!-- footer section  -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-box">
+          <h3>LearnCode</h3>
+          <p>
+            Learn HTML, CSS, JavaScript & more with easy examples and projects.
+          </p>
+        </div>
+
+        <div class="footer-box">
+          <h4>Learn</h4>
+          <a href="new-htmlfile.html">HTML</a>
+          <a href="cssfile.html">CSS</a>
+          <a href="jsfile.html">JavaScript</a>
+          <a href="https://github.com/adilinamdar617-creator/personal-projects/tree/main/Front-End%20Projects/Projects">Projects</a>
+        </div>
+
+        <div class="footer-box">
+          <h4>Resources</h4>
+          <a href="#">Tutorials</a>
+          <a href="#">Practice</a>
+          <a href="#">Blog</a>
+          <a href="#">Roadmap</a>
+        </div>
+
+        <div class="footer-box">
+          <h4>Support</h4>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">© 2026 LearnCode. All Rights Reserved.</div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Sidebar JS -->
+    <script src="scritpt.js"></script>
+  </body>
+</html>

@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Learnify</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./Assets/8d8916bfd0f682977d7cdf4213decf1e.png"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <style></style>
+  </head>
+
+  <body>
+   <!-- Loader -->
+<div id="pageLoader">
+  <div class="loader"></div>
+</div>
+
+
+    <!-- YOUR ORIGINAL HEADER -->
+    <section class="header">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <div class="logo">
+            <!-- Logo / Brand -->
+            <img src="./Assets/8d8916bfd0f682977d7cdf4213decf1e.png" alt="" />
+
+            <a class="navbar-brand" id="heading" href="#">Learnify</a>
+          </div>
+
+          <!-- Toggle Button (Mobile) -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Menu -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="log-in.html">Log In</a>
+              </li>
+          
+
+
+              <br />
+            </ul>
+            <!-- Sidebar Hamburger -->
+            <button id="sidebarToggle" class="sidebar-toggle">☰</button>
+
+            <form class="d-flex">
+              <div class="input-group">
+                <span
+                  id="search"
+                  class="input-group-text bg-white border-end-0"
+                >
+                  🔍
+                </span>
+                <input
+                  type="search"
+                  class="form-control border-start-0"
+                  placeholder="Search ..."
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="new-nav">
+        <ol class="new-ol">
+          <li>
+            <a href="new-htmlfile.html">HTML</a>
+          </li>
+
+          <li>
+            <a href="cssfile.html">CSS</a>
+          </li>
+
+          <li>
+            <a href="jsfile.html">JavaScript</a>
+          </li>
+        </ol>
+      </div>
+    </section>
+    <!-- SIDEBAR + CONTENT -->
+    <section class="sidebar-main">
+      <div class="sidebar">
+        <!-- SIDEBAR -->
+        <aside class="sidebar-right" id="sidebar">
+          <h2>HTML</h2>
+
+          <button class="sidebar-btn active" data-target="home">
+            HTML Home
+          </button>
+          <button class="sidebar-btn" data-target="intro">
+            HTML Introduction
+          </button>
+          <button class="sidebar-btn" data-target="do">
+            What Does HTML Do?
+          </button>
+          <button class="sidebar-btn" data-target="example">
+            HTML Example
+          </button>
+          <button class="sidebar-btn" data-target="history">
+            HTML History
+          </button>
+        </aside>
+
+        <!-- CONTENT -->
+
+        <main class="sidebar-left">
+          <section class="content-section active home">
+            <h1 class="first-heading">HTML Home</h1>
+            <p class="html-para">
+              Welcome to the HTML learning section. <br />
+
+              HTML stands for **HyperText Markup Language**. It is the basic
+              language used to create web pages. Every <br />website on the
+              internet is built using HTML. It provides the structure of a
+              webpage and tells the <br />
+              browser what to display, such as headings, paragraphs, images,
+              links, and lists. <br />
+
+              HTML is not a programming language. It does not perform
+              calculations or make decisions. Instead, it <br />organizes and
+              describes the content of a webpage. You can think of HTML as the
+              **skeleton of a <br />website**. <br />
+
+              When you open any website, the browser reads the HTML file and
+              shows the page content on the screen. <br />Without HTML, a
+              website cannot exist because there would be nothing for the
+              browser to display. <br />
+
+              In web development: <br />
+
+              * HTML creates the structure <br />
+              * CSS designs the appearance <br />
+              * JavaScript adds behavior and interactivity <br />
+
+              HTML is the first step in learning web development. It is easy to
+              understand and beginner-friendly, which <br />is why every web
+              developer starts with HTML before learning CSS and JavaScript.
+              <br />
+
+              In this section you will learn: <br />
+
+              <h2>* What HTML is </h2>
+              * How web pages are structured <br />
+              * Basic elements like headings and paragraphs <br />
+              * Links and images <br />
+              * Lists and page organization <br />
+
+              After learning HTML, you will be able to create your own simple
+              web pages. <br />
+            </p>
+          </section>
+
+          <section class="content-section intro">
+            <h1 class="first-heading">HTML Introduction</h1>
+            <p class="html-para">
+           
+
+HTML (HyperText Markup Language) is the standard language used to create web pages. It tells the web <br> browser how the content of a page should be arranged and displayed on the screen. <br>
+
+HTML uses small labels called *tags* to describe different parts of a webpage. These tags identify <br> headings, paragraphs, images, links, tables, and many other elements. The browser reads these tags and <br>then shows the page to the user in a proper format. <br>
+
+When you visit any website, your browser first receives an HTML file. The browser understands the HTML  <br>instructions and builds the page layout you see, such as titles at the top, text in the middle,  <br>navigation menus, and images in different sections. <br>
+
+HTML alone does not make a website look beautiful and it does not make it interactive. Its main job is  <br>structure and organization. It arranges the content in a logical order so the browser knows what each  <br>piece of content represents. <br>
+
+<h2>In web development: </h2>
+
+* HTML provides the structure of the webpage <br>
+* CSS adds design, colors, and layout <br>
+* JavaScript adds actions and interactivity <br>
+
+Because of this, HTML is considered the foundation of web development. Before learning styling or  <br>programming, every beginner first learns HTML to understand how webpages are built. <br>
+
+After learning HTML, you will be able to create simple web pages that contain headings, text content,  <br>images, links, and basic page sections. This knowledge becomes the base for learning CSS and <br>JavaScript later. <br>
+
+            </p>
+          </section>
+
+          <section class="content-section do">
+            <h1 class="first-heading">What Does HTML Do?</h1>
+            <p class="html-para">
+           HTML tells the web browser what content a webpage has and how it is arranged. <br>
+
+It does not make the page stylish and it does not make it interactive. <br>
+Its job is only to show and organize the content. <br>
+
+<h2>What HTML actually does </h2>
+
+HTML creates the structure of a webpage. <br>
+It lets the browser understand: <br>
+
+this is a heading (title) <br>
+
+this is a paragraph (text) <br>
+
+this is an image <br>
+ 
+this is a link <br>
+
+this is a list <br>
+
+this is a section of the page <br>
+
+So when you open a website, the browser reads HTML first and then displays the page. <br>
+ 
+<h2>Simple real-life example </h2>
+
+Think of a house: <br>
+
+HTML → walls, rooms, doors (structure) <br>
+
+CSS → paint, colors, decoration <br>
+
+JavaScript → electricity, switches, fan working <br>
+ 
+Without structure, the house cannot exist. <br>
+Without HTML, a webpage cannot exist. <br>
+
+<h2>Examples of what HTML shows on a website </h2>
+
+Using HTML you can: <br>
+
+display text and articles <br>
+
+show images <br>
+
+create buttons <br>
+
+add links to other pages <br>
+
+create navigation menus <br>
+
+embed videos <br>
+
+create forms (login, signup, contact) <br>
+
+<h2>Important point </h2>
+
+HTML is not a programming language. <br>
+It does not calculate, think, or make decisions. <br>
+It only describes the content so the browser knows what to display. <br>
+
+<h2>In one line </h2>
+
+HTML builds the basic structure of a webpage and shows the content to the user. <br>
+            </p>
+          </section>
+
+          <section class="content-section example">
+            <h1 class="first-heading">HTML Example</h1>
+            <p class="html-para"> 
+            Imagine you open a simple webpage. <br>
+ 
+At the top you see a big title: <br>
+“Welcome to My Learning Website” <br>
+That title is created using HTML. <br>
+
+Below it you see a paragraph explaining the website: <br>
+“This website helps beginners learn HTML, CSS and JavaScript.” <br>
+That text is also placed using HTML. <br>
+
+Under the paragraph there is an image (maybe a computer or coding picture). <br>
+HTML tells the browser to show that image on the page. <br>
+
+Then you see a blue clickable text: <br>
+“Go to CSS Page” <br>
+When you click it, it opens another page. <br>
+That clickable link is made using HTML. <br>
+
+At the bottom you see a form: <br>
+
+a box to enter your name <br>
+
+a box to enter your email <br>
+
+a submit button <br>
+
+HTML creates these input boxes and the button. <br>
+
+<h2>What HTML did in this page </h2>
+
+HTML: <br>
+
+showed the heading <br>
+
+displayed the paragraph <br>
+
+added the image <br>
+
+created the link <br>
+
+created the form <br>
+
+It only placed the content and structure. <br>
+
+The colors and design would come from CSS. <br>
+The button actions and checking would come from JavaScript. <br>
+
+<h2>Simple understanding</h2>
+
+HTML is used to put content onto a webpage so the browser can display it to the user. <br>
+            </p>
+          </section>
+
+          <section class="content-section history">
+            <h1 class="first-heading">HTML History</h1>
+            <p class="html-para">Created by Tim Berners-Lee in 1991.</p>
+            <p class="html-para">
+              
+
+HTML (HyperText Markup Language) was created to help people share and read information on the internet. <br>
+
+In 1991, a scientist named **Tim Berners-Lee** introduced HTML while working at CERN (a research  <br>organization). He wanted researchers to easily open documents and move from one document to another  <br>using clickable links. This idea became the World Wide Web. <br>
+
+The first version of HTML was very simple. It only supported basic text, headings, and links. There were  <br>no colors, no layouts, and no images like modern websites. Pages looked plain and similar to digital  <br>documents. <br>
+
+As the internet became popular, HTML improved over time. New features were added so websites could include  <br>images, tables, and better organization. Different versions of HTML were released, each  <br>adding more capabilities for web developers. <br>
+
+Later, CSS was introduced to handle design and styling, and JavaScript was introduced to add  <br> interactivity. HTML remained responsible for the structure of the webpage. <br>
+
+A major update called **HTML5** was released in 2014. It allowed websites to play video and audio directly  <br>in the browser and made modern websites faster and more powerful. After HTML5, websites  <br>could support animations, media, and mobile devices much more easily. <br>
+
+Today, HTML is the foundation of every website on the internet. Every web page you open—whether it is a  <br>blog, shopping site, or social media platform—uses HTML to display its content. <br>
+
+            </p>
+          </section>
+        </main>
+      </div>
+    </section>
+
+    <!-- footer section  -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-box">
+          <h3>LearnCode</h3>
+          <p>
+            Learn HTML, CSS, JavaScript & more with easy examples and projects.
+          </p>
+        </div>
+
+        <div class="footer-box">
+          <h4>Learn</h4>
+          <a href="new-htmlfile.html">HTML</a>
+          <a href="cssfile.html">CSS</a>
+          <a href="jsfile.html">JavaScript</a>
+          <a
+            href="https://github.com/adilinamdar617-creator/personal-projects/tree/main/Front-End%20Projects/Projects"
+            >Projects</a
+          >
+        </div>
+
+        <div class="footer-box">
+          <h4>Resources</h4>
+          <a href="#">Tutorials</a>
+          <a href="#">Practice</a>
+          <a href="#">Blog</a>
+          <a href="#">Roadmap</a>
+        </div>
+
+        <div class="footer-box">
+          <h4>Support</h4>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">© 2026 LearnCode. All Rights Reserved.</div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Sidebar JS -->
+    <script src="scritpt.js"></script>
+  </body>
+</html>

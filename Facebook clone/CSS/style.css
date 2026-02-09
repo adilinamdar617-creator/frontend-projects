@@ -1,0 +1,374 @@
+:root {
+  --color: #1e1d1d;
+  --bg-color: white;
+  --primary-bg-color:lightgray;
+  --logo-height: 25px;
+  --logo-width: 25px;
+  --sidebar-width: 25%;
+  --center-content-width: 40%;
+  --font-size: 1rem;
+  --font-weight: 500;
+  --gap: 4rem;
+  --second-gap: 10px;
+  --padding: 1rem 2rem 8px 2rem;
+  --list-padding: 0 12px;
+  --margin-bottom: 10px;
+  --border-radius: 50px;
+  --height:100vh;
+  --box-shadow:2px 2px 5px rgba(64, 66, 62, 0.3);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary-bg-color);
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--margin-bottom);
+  padding: var(--padding);
+  background-color: white;
+}
+
+.logo-container {
+  display: flex;
+  position: relative;
+ 
+}
+#logo-img {
+    position: absolute;
+    top: -10px;
+    left: -27px;
+  width: 50px;
+  height: 50px;
+ 
+}
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input {
+  position: relative;
+  top: -2px;
+  left: 27px;
+  width: 200px;
+  height: 40px;
+  border-radius: var(--border-radius);
+  background-color: var(--primary-bg-color);
+  border: none;
+}
+
+
+::placeholder {
+  text-align: center;
+  cursor: pointer;
+}
+
+
+#search {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 37px;
+  top: 8px;
+}
+
+.ul-1 {
+  display: flex;
+  gap: var(--gap);
+}
+.ul-2 {
+  display: flex;
+  gap: var(--second-gap);
+}
+li {
+  list-style: none;
+}
+img {
+  height: var(--logo-height);
+  width: var(--logo-width);
+}
+
+.profile {
+  width: var(--logo-width);
+  height: var(--logo-height);
+  border-radius: var(--border-radius);
+}
+main{
+    display: flex;
+    background-color: var(--primary-bg-color);
+    width: 100%;
+    height: var(--height);
+}
+.left{
+    width: var(--sidebar-width);
+    height: var(--height);
+    white-space: nowrap;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+ol li a {
+  display: flex;
+  align-items: center;
+  gap: var(--second-gap);
+  padding: var(--list-padding);
+  font-weight: var(--font-weight);
+  text-decoration: none;
+  color: var(--color);
+  margin: var(--margin-bottom);
+
+}
+ol li a img{
+    width: 40px;
+    height: 40px;
+    border-radius: var(--border-radius);
+}
+
+.para a{
+    padding: 10px;
+    text-decoration: none;
+    color: var(--color);
+}
+.center{
+    width: var(--center-content-width);
+    height: 100vh;
+    margin-left: 7%;
+    white-space: nowrap;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.card-one{
+    max-width: 100%;
+    background-color: var(--bg-color);
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 15px;
+    box-shadow: var(--box-shadow);
+    position: relative;
+}
+
+.card-logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    
+}
+.card-logo input{
+    width: 500px;
+    height: 40px;
+    position: absolute;
+    top: 24px;
+    left: 76px;
+
+}
+hr{
+    margin: 20px 0;
+}
+
+.card-icon {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 28px;
+}
+.card-icon a{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+    color: var(--color);
+}
+.shorts-container{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 18px;
+
+}
+.shorts{
+    width: 18%;
+    height: 200px;
+    background-color: var(--bg-color);
+    position: relative;
+    border-radius: 15px;
+    /* margin-top: 16px; */
+    overflow: hidden;
+}
+.shorts img{
+    width: 100%;
+    height: 140px;
+}
+#shorts-btn{
+    position: absolute;
+    top: 125px;
+    left: 38px;
+    width: 30px;
+    height: 30px;
+    border-radius: var(--border-radius);
+    color: var(--bg-color);
+    background-color: blue;
+    font-size: 24px;
+    font-weight: bold;
+    border: 5px solid white;
+
+}
+.short-para{
+    text-align: center;
+    margin-top: 20px;
+}
+.shorts-1{
+    width: 18%;
+    height: 200px;
+    background-color: white;
+    border-radius: 15px;
+overflow: hidden;
+background-image: url(/image/gojo.jpeg);
+background-repeat: no-repeat;
+background-position: center;
+
+}
+.short-logo1{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+
+    border: 5px solid blue;
+    margin-top: 10px;
+    margin-left: 10px;
+
+    
+}
+.short-logo1 img{
+    width: 100%;
+    border-radius: 50px;
+
+
+}
+.short-para1{
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 120px;
+    color: white;
+    background-color: gray;
+    border-radius: 16px;
+}
+
+.shorts-2{
+      width: 18%;
+    height: 200px;
+    background-color: white;
+    border-radius: 15px;
+overflow: hidden;
+background-image: url(/image/demon-slayer-giyu-tomioka-sword-art-wallpaper-preview.jpg);
+background-repeat: no-repeat;
+background-position: center;
+
+}
+.shorts-3{
+      width: 18%;
+    height: 200px;
+    background-color: white;
+    border-radius: 15px;
+overflow: hidden;
+background-image: url(/image/kuchiki.jpg);
+background-repeat: no-repeat;
+background-position: center;
+object-fit: contain;
+
+
+}
+.shorts-4{
+      width: 18%;
+    height: 200px;
+    background-color: white;
+    border-radius: 15px;
+overflow: hidden;
+background-image: url(/image/sasuke.jpeg);
+background-repeat: no-repeat;
+background-position: center;
+
+}
+
+.post-container{
+    width: 100%;
+    height: 500px;
+    box-shadow: var(--box-shadow);
+    background-color: var(--bg-color);
+    margin-top: 15px;
+    border-radius: 16px;
+}
+.post{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  
+}
+.post-logo img{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px ;
+
+}
+.post-card-img{
+    width: 100%;
+    height: 300px;
+    padding: 0 20px;
+    margin-top: 16px;
+    background-color: bisque;
+    padding: 10px;
+}
+.post-card-img img{
+    width: 100%;
+    height: 300px;
+}
+.post-icon a{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+    color: var(--color);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    margin-top: 14px;
+    margin-left: 14px;
+    
+}
+.count{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+.like a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.like:hover{
+    background-color: var(--primary-bg-color);
+}
+.right{
+    width: var(--sidebar-width);
+    padding: 20px;
+    margin-left: 20px;
+    text-align: start;
+    white-space: nowrap;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+  display: none;
+}

@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: gray;
+  color: white;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background-color: black;
+}
+ul {
+  display: flex;
+}
+ul li {
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin-inline: 22px;
+}
+.logo {
+  color: white;
+  font-size: 21px;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  margin-top: 141px;
+  gap: 33px;
+}
+.main img {
+  width: 600px;
+}
+.mainText {
+  margin-top: 44px;
+}
+.main h1 {
+  font-size: 44px;
+}
+.main p {
+  margin-top: 22px;
+  color: silver;
+}
+.main button {
+  width: 140px;
+  height: 39px;
+  background-color: orange;
+  color: white;
+  font-size: 18px;
+  border: none;
+  margin-top: 22px;
+}
+.head {
+  text-align: center;
+  padding: 88px;
+}
+.foods {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.foodcart {
+  width: 300px;
+  padding: 11px;
+  background-color: #fff;
+  margin-inline: 22px;
+  margin-top: 26px;
+  cursor: pointer;
+  color: black;
+}
+.foodcart img {
+  width: 100%;
+}
+.foodcart p {
+  padding: 7px;
+}
+.foodcart button {
+  width: 130px;
+  background-color: orangered;
+  color: white;
+  padding: 3px;
+  border: none;
+  font-size: 18px;
+}
+.reviews {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.reviewcard {
+  width: 300px;
+  padding: 22px;
+  background-color: #fff;
+  text-align: center;
+  margin-inline: 22px;
+  margin-top: 22px;
+  color: black;
+  border-radius: 11px;
+}
+.reviewcard img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.trends {
+  width: 900px;
+  height: 300px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+.trendfood {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: auto;
+  overflow: hidden;
+  transition: all 1s ease;
+}
+.trendfood img {
+  width: 240px;
+  height: 240px;
+  margin-inline: 12px;
+}
+.blog {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+  justify-content: center;
+}
+.blogcart {
+  width: 300px;
+  height: 250px;
+  color: black;
+  background-color: #fff;
+  margin-inline: 22px;
+  padding: 11px;
+}
+.blogcart img {
+  width: 100%;
+}
+.blogcart a {
+  padding: 4px 12px;
+  background-color: orange;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  top: 16px;
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+  padding: 66px;
+  margin-top: 66px;
+}
+text {
+  margin-top: 22px;
+}
+.text p {
+  margin-top: 11px;
+}
+
+.carddetail {
+  width: 500px;
+  padding: 32px;
+  background-color: #fff;
+  color: black;
+  text-align: center;
+  border-radius: 11px;
+  position: fixed;
+  top: 4%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, 40%);
+}
+.carddetail img {
+  width: 300px;
+}
+
+.carddetail i {
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  font-size: 25px;
+  padding: 11px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1100px) {
+  .main {
+    display: block;
+    text-align: center;
+  }
+  .main img {
+    margin-top: 22px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .trends {
+    width: 90%;
+  }
+
+  .trendfood img {
+    width: 200px;
+    margin-inline: 6px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .trends {
+    width: 90%;
+  }
+
+  .trendfood img {
+    width: 80px;
+    height: 130px;
+    margin-inline: 6px;
+  }
+}
+
+#bar{
+    display: none;
+}
+@media screen and (max-width: 750px){
+ul li{
+display: none;
+}
+#bar{
+    display: block;
+}
+.main img{
+    width: 90%;
+    border-radius: 11px;
+}
+.main h1{
+    font-size: 34px;
+}
+.carddetail{
+    width: 80%;
+}
+.carddetail img{
+    width: 200px;
+    
+}
+}

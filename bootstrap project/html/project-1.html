@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LearnBoost — Bootstrap Layout</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0d6efd;
+      --accent: #6610f2;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+
+    .hero {
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(90deg, rgba(13, 110, 253, 0.08), rgba(102, 16, 242, 0.04));
+    }
+
+    .course-card img {
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .feature-icon {
+      font-size: 28px;
+    }
+
+    footer {
+      background-color: #212529;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">LearnBoost</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold">Master Bootstrap Layouts with Hands-On Practice</h1>
+          <p class="lead text-muted">Learn the Bootstrap grid, typography, and components to build modern web designs.
+          </p>
+          <a href="#courses" class="btn btn-primary btn-lg me-2">View Courses</a>
+          <a href="#about" class="btn btn-outline-secondary btn-lg">Learn More</a>
+        </div>
+        <div class="col-lg-6 d-none d-lg-block text-center">
+          <img src="https://picsum.photos/600/380?random=1" alt="hero" class="img-fluid rounded shadow-sm">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- FEATURES SECTION -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 p-4 text-center">
+            <div class="mb-3 feature-icon">📚</div>
+            <h5>Learn by Building</h5>
+            <p class="text-muted">Practice Bootstrap grid, utilities, and responsive design concepts.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4 text-center">
+            <div class="mb-3 feature-icon">🧩</div>
+            <h5>Reusable Components</h5>
+            <p class="text-muted">Create cards, navbars, and forms using Bootstrap’s component classes.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4 text-center">
+            <div class="mb-3 feature-icon">🎯</div>
+            <h5>Interview-Ready Skills</h5>
+            <p class="text-muted">Develop the foundation needed to answer layout and responsive questions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSES SECTION -->
+  <section id="courses" class="py-5 bg-light">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h3>Popular Courses</h3>
+        <a href="#" class="text-decoration-none">See All →</a>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card course-card h-100">
+            <img src="https://picsum.photos/seed/p1/600/360" class="card-img-top" alt="course">
+            <div class="card-body">
+              <h5 class="card-title">Bootstrap Basics</h5>
+              <p class="card-text text-muted">Understand containers, rows, and columns.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card course-card h-100">
+            <img src="https://picsum.photos/seed/p2/600/360" class="card-img-top" alt="course">
+            <div class="card-body">
+              <h5 class="card-title">Grid System Deep Dive</h5>
+              <p class="card-text text-muted">Master responsive grids for any layout size.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card course-card h-100">
+            <img src="https://picsum.photos/seed/p3/600/360" class="card-img-top" alt="course">
+            <div class="card-body">
+              <h5 class="card-title">Flex & Utility Classes</h5>
+              <p class="card-text text-muted">Use alignment, spacing, and display utilities.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="py-5">
+    <div class="container text-center">
+      <h2>About the Project</h2>
+      <p class="text-muted mx-auto" style="max-width:700px">This project is designed to help students understand
+        Bootstrap visually and logically. It connects directly with Figma layouts and focuses on responsive structure,
+        alignment, and spacing.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Name</label>
+              <input type="text" class="form-control" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Message</label>
+              <textarea class="form-control" rows="4" placeholder="Write your message..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-4 text-center">
+    <div class="container">
+      <p class="mb-0">© 2025 LearnBoost | Designed for Bootstrap Learning</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

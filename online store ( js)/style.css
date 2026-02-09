@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: lightgray;
+}
+/* Container styling */
+#container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Card styling */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* Image */
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+}
+
+/* Title */
+.card h3 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+/* Description */
+.card .desc {
+  font-size: 14px;
+  color: #555;
+  height: 60px;
+  overflow: hidden;
+}
+
+/* Category */
+.card .category {
+  font-size: 13px;
+  color: gray;
+}
+
+/* Price */
+.card .price {
+  font-size: 18px;
+  font-weight: bold;
+  color: green;
+}
+#header {
+  width: 100%;
+  background-color: white;
+  color: darkcyan;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+#header-logo {
+  width: 40px;
+  height: 30px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+li {
+  list-style: none;
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+input {
+  border-radius: 12px;
+  padding: 4px 10px;
+  font-size: 18px;
+}
+
+#footer {
+  width: 100%;
+  padding: 20px;
+  color: black;
+  background-color: white;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.form {
+  background-image: url(/img/back1.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+#background {
+  width: 100%;
+  height: 100%;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+#forgot {
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: left;
+}
+#btn {
+  font-size: 18px;
+  font-weight: bold;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  margin-top: 12px;
+  background-color: palevioletred;
+  border: none;
+  color: white;
+}
+#btn:hover {
+  background-color: lightpink;
+  border: 1px solid white;
+}
+.form-box {
+  width: 320px;
+  height: 250px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: lightpink;
+  border: 1px solid white;
+}
+
+.login {
+  margin-top: 20px;
+}
+
+#user {
+  background-color: lightpink;
+  border: 1px solid white;
+}
+#pass {
+  border: 1px solid white;
+  background-color: lightpink;
+}
+#user:hover {
+  border: 1px solid black;
+}
+#pass:hover {
+  border: 1px solid black;
+}
+::-webkit-input-placeholder {
+  color: white;
+}
+

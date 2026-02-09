@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Learnify</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./Assets/8d8916bfd0f682977d7cdf4213decf1e.png"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main-style.css" />
+  </head>
+  <body>
+    <!-- Loader -->
+    <div id="pageLoader">
+      <div class="loader"></div>
+    </div>
+
+    <section class="header">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <div class="logo">
+            <!-- Logo / Brand -->
+            <img src="./Assets/8d8916bfd0f682977d7cdf4213decf1e.png" alt="" />
+
+            <a class="navbar-brand" id="heading" href="#">Learnify</a>
+          </div>
+
+          <!-- Toggle Button (Mobile) -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Menu -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="log-in.html">Log In</a>
+              </li>
+
+              <br />
+            </ul>
+
+            <form class="d-flex">
+              <div class="input-group">
+                <span
+                  id="search"
+                  class="input-group-text bg-white border-end-0"
+                >
+                  🔍
+                </span>
+                <input
+                  type="search"
+                  class="form-control border-start-0"
+                  placeholder="Search ..."
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="new-nav">
+        <ol class="new-ol">
+          <li>
+            <a href="new-htmlfile.html">HTML</a>
+          </li>
+
+          <li>
+            <a href="cssfile.html">CSS</a>
+          </li>
+
+          <li>
+            <a href="jsfile.html">JavaScript</a>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Hero section  -->
+    <section class="hero">
+      <div class="container">
+        <div class="box">
+          <h1 class="hero-heading" style="color: white">Learn to Code</h1>
+          <h3 class="hero-heading1">
+            With the world's largest web developer site.
+          </h3>
+        </div>
+        <form id="form" class="search-box mx-auto">
+          <div class="input-group container">
+            <span class="input-group-text bg-white border-end-0">
+              <i class="bi bi-search"></i>
+            </span>
+            <input
+              id="main-search"
+              type="search"
+              class="form-control border-start-0"
+              placeholder="Search HTML, CSS, JavaScript..."
+            />
+            <button class="btn btn-primary" type="submit">Search</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Section Wave Divider -->
+
+    <!-- html section  -->
+    <section class="main-html">
+      <div class="container html-container">
+        <div class="html">
+          <h1 id="html">HTML</h1>
+          <p id="html-para">The language for building web pages</p>
+          <button class="html-btn" id="html-button">
+            <a id="html-btn" href="htmlfile.html">Learn HTML</a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- css section  -->
+    <section class="main-css">
+      <div class="container css-container">
+        <div class="css">
+          <h1 id="css">CSS</h1>
+          <p id="css-para">The language for styling web pages</p>
+          <button class="css-btn" id="css-button">
+            <a id="css-btn" href="cssfile.html">Learn CSS</a>
+          </button>
+        </div>
+        <div class="editor-css"></div>
+      </div>
+    </section>
+    <!-- js section  -->
+    <section class="main-js">
+      <div class="container js-container">
+        <div class="js">
+          <h1 id="js">JavaScript</h1>
+          <p id="js-para">The language for programming web pages</p>
+          <button class="js-btn">
+            <a id="js-btn" href="jsfile.html">Learn JavaScript</a>
+          </button>
+        </div>
+        <div class="editor-js"></div>
+      </div>
+    </section>
+
+    <!-- code editor section  -->
+    <section class="editor">
+      <h1 id="editor-heading">Code Editor</h1>
+      <p id="editor-para">
+        With our online code editor, you can edit code and view the result in
+        your browser
+      </p>
+      <div class="code-run">
+        <div class="lc-editor-wrapper">
+          <div class="lc-code-panel">
+            <h3 class="lc-title">Try it Yourself</h3>
+
+            <textarea id="lcCodeInput">
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    h1 { color: blue; }
+  </style>
+</head>
+<body>
+
+<h1>Hello Learner</h1>
+<p>This is a demo.</p>
+
+</body>
+</html>
+    </textarea
+            >
+
+            <button class="lc-run-btn" onclick="lcRunCode()">Run »</button>
+          </div>
+
+          <div class="lc-output-panel">
+            <h3 class="lc-title">Result</h3>
+            <iframe id="lcOutputFrame"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <svg
+      width="100%"
+      height="72"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+    >
+      <!-- Upper side (Black background) -->
+      <rect width="100" height="100" fill="#111"></rect>
+
+      <!-- Lower side (Pink wave) -->
+      <path d="M0,0 L100,0 C35,150 35,0 0,100 Z" fill="#282A35"></path>
+    </svg>
+
+    <!-- footer section  -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-box">
+          <h3>LearnCode</h3>
+          <p>
+            Learn HTML, CSS, JavaScript & more with easy examples and projects.
+          </p>
+        </div>
+
+        <div class="footer-box">
+          <h4>Learn</h4>
+          <a href="new-htmlfile.html">HTML</a>
+          <a href="cssfile.html">CSS</a>
+          <a href="jsfile.html">JavaScript</a>
+          <a
+            href="https://github.com/adilinamdar617-creator/personal-projects/tree/main/Front-End%20Projects/Projects"
+            >Projects</a
+          >
+        </div>
+
+        <div class="footer-box">
+          <h4>Resources</h4>
+          <a href="#">Tutorials</a>
+          <a href="#">Practice</a>
+          <a href="#">Blog</a>
+          <a href="#">Roadmap</a>
+        </div>
+
+        <div class="footer-box">
+          <h4>Support</h4>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">© 2026 LearnCode. All Rights Reserved.</div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scritpt.js"></script>
+  </body>
+</html>
