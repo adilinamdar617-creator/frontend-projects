@@ -55,23 +55,27 @@ This project helped me practice real-world frontend development concepts such as
 
 ### Home
 
-![Home](../screenshots/home.png)
+![Home](./screenshots/home.png)
 
 ### About
 
-![About](../screenshots/about.png)
+![About](./screenshots/about.png)
 
 ### Services
 
-![Services](../screenshots/services.png)
+![Services](./screenshots/services.png)
 
 ### Portfolio
 
-![Portfolio](../screenshots/portfolio.png)
+![Portfolio](./screenshots/portfolio.png)
 
 ### Contact
 
-![Contact](../screenshots/contact.png)
+![Contact](./screenshots/contact.png)
+
+### Footer
+
+![Contact](./screenshots/footer.png)
 
 ---
 
