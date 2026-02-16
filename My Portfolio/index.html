@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Portfolio</title>
+ 
+
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="bg-black text-white">
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top shadow">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-danger" href="#home">Adil</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+           
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ============ HOME ============ -->
+    <section
+      id="home"
+      class="vh-100 d-flex align-items-center text-center reveal"
+    >
+      <div class="container">
+        <h1 class="display-4 fw-bold">
+          Hi, I'm <span class="text-danger">Adil</span>
+        </h1>
+        <h3 class="mt-3">Front-End Developer & Video Editor</h3>
+        <p class="mt-3">
+          I create modern responsive websites and engaging videos for social
+          media & YouTube.
+        </p>
+        <a href="#contact" class="btn btn-danger mt-4  px-4 py-2">Hire Me</a>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT SECTION ============ -->
+    <section id="about" class="py-5 reveal">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5 text-center about-col-1" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <img
+              src="images/user.png"
+              alt="Adil"
+              class="img-fluid rounded-4 shadow"
+            />
+        <a href="./images/New resume.pdf" style="width: auto;" class="btn btn-danger mt-5  px-4 py-2" target="_blank">Download CV</a>
+
+          </div>
+
+          <div class="col-lg-7 about-col-2">
+            <h1 class="sub-title mb-4">About Me</h1>
+            <p class="about-text">
+              Hello! My name is Adil, and I am a Front-End Developer and Video
+              Editor from India. I enjoy building websites as well as creating
+              visually engaging videos.
+              <br /><br />
+              My goal is to grow as a full-stack developer and professional
+              content creator.
+            </p>
+
+            <div class="tab-titles mt-4">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                My Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('video-editing')">
+                Editing Skills
+              </p>
+            </div>
+
+            <div class="tab-content active-tab" id="skills">
+              <h3><span>Web</span> Development</h3>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>DOM Manipulation</li>
+                <li>Bootstrap</li>
+                <li>Responsive Design</li>
+                <li>Git & GitHub</li>
+              </ul>
+            </div>
+
+            <div class="tab-content" id="experience">
+              <ul>
+                <li>
+                  <span>2018</span><br />Essential Store Manager & Cashier
+                </li>
+                <li>
+                  <span>2024</span><br />Video Editing (CapCut & DaVinci
+                  Resolve) For YouTube & Instagram
+                </li>
+                <li>
+                  <span>2024</span><br />Canva, PicsArt, Pixlab, Photoshop For
+                  Thumbnails & Photo Editing
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-content" id="education">
+              <ul>
+                <li>
+                  <span>2025</span><br />MERN Stack Training at Codempower
+                </li>
+                <li>
+                  <span>2025</span><br />BCA From Sandip University Nashik
+                </li>
+                <li>
+                  <span>2027</span><br />MCA From Sandip University Nashik
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-content" id="video-editing">
+              <h3><span>Video</span> Editing</h3>
+              <ul>
+                <li>CapCut</li>
+                <li>Basic After Effects</li>
+                <li>Color Correction & Color Grading</li>
+                <li>Transitions & Effects</li>
+                <li>Subtitles & Captions</li>
+                <li>Reels & Shorts Editing</li>
+                <li>YouTube Video Editing</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES SECTION ============ -->
+    <section id="services" class="py-5 reveal">
+      <div class="container text-center">
+        <h1 class="mb-5">What I Offer</h1>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="service-card h-100 p-4">
+              <i class="fa-solid fa-code"></i>
+              <h2>Web</h2>
+              <p>
+                I design and develop responsive websites using HTML, CSS,
+                JavaScript and Bootstrap.
+              </p>
+              <a
+                href="https://github.com/adilinamdar617-creator/frontend-projects.git"
+                target="_blank"
+                >View Projects</a
+              >
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service-card h-100 p-4">
+              <i class="fa-solid fa-video"></i>
+              <h2>Video Editing</h2>
+              <p>
+                I edit YouTube videos, reels and shorts with transitions,
+                subtitles and music.
+              </p>
+              <a href="https://youtube.com/@ai.edits15" target="_blank"
+                >Watch My Work</a
+              >
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service-card h-100 p-4">
+              <i class="fa-brands fa-linkedin"></i>
+              <h2>Connect With Me</h2>
+              <p>
+                Visit my LinkedIn profile to see my updates and professional
+                details.
+              </p>
+              <a
+                href="https://www.linkedin.com/in/adil-inamdar/"
+                target="_blank"
+                >Visit LinkedIn</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PORTFOLIO ============ -->
+    <section id="portfolio" class="py-5 bg-dark reveal">
+      <div class="container text-center">
+        <h1 class="mb-5">My Work</h1>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="portfolio-card">
+              <img src="images/project1.jpg" alt="Web Project" />
+
+              <div class="portfolio-layer">
+                <h3>Web Development</h3>
+                <p>
+                  Responsive websites built using HTML, CSS, JavaScript &
+                  Bootstrap.
+                </p>
+
+                <a
+                  href="https://github.com/adilinamdar617-creator/frontend-projects.git"
+                  target="_blank"
+                >
+                  <i class="fa-solid fa-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="portfolio-card">
+              <img src="images/project2.jpg" alt="Video Editing" />
+
+              <div class="portfolio-layer">
+                <h3>Video Editing</h3>
+                <p>
+                  YouTube videos, reels and shorts with transitions and
+                  subtitles.
+                </p>
+
+                <a href="https://youtube.com/@ai.edits15" target="_blank">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="portfolio-card">
+              <img src="images/project3.jpg" alt="LinkedIn" />
+
+              <div class="portfolio-layer">
+                <h3 >My LinkedIn</h3>
+                <p >Check my professional profile and updates.</p>
+
+                <a
+                  href="https://www.linkedin.com/in/adil-inamdar/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="py-5 reveal">
+      <div class="container">
+        <h1 class="text-center mb-5">Contact Me</h1>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <form
+              action="https://formspree.io/f/mlgwjgyv"
+              method="POST"
+              class="contact-form"
+            >
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required
+                class="form-control mb-3"
+              />
+
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+                class="form-control mb-3"
+              />
+
+              <input
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                required
+                class="form-control mb-3"
+              />
+
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Your Message"
+                required
+                class="form-control mb-3"
+              ></textarea>
+
+              <button type="submit" class="btn btn-danger w-100">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <!-- top line glow -->
+        <div class="footer-line"></div>
+
+        <!-- name -->
+        <h2 class="footer-logo">Adil Inamdar</h2>
+        <p class="footer-tag">
+          Front-End Developer • Video Editor • Content Creator
+        </p>
+
+        <!-- social icons -->
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/adil-inamdar/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+
+          <a href="https://github.com/adilinamdar617-creator" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a href="https://youtube.com/@ai.edits15" target="_blank">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+
+          <a href="mailto:youremail@gmail.com" target="_blank">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+
+          <a href="https://t.me/lootdealsindia91" target="_blank">
+            <i class="fa-brands fa-telegram"></i>
+          </a>
+
+        </div>
+
+        <!-- copyright -->
+        <p class="copyright">
+          © 2026 <span>Adil Inamdar</span> — All Rights Reserved
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="script.js"></script>
+    <!-- Tabs Script -->
+    <script>
+      const tablinks = document.getElementsByClassName("tab-links");
+      const tabcontents = document.getElementsByClassName("tab-content");
+      function opentab(tabname) {
+        for (let tablink of tablinks) tablink.classList.remove("active-link");
+        for (let tabcontent of tabcontents)
+          tabcontent.classList.remove("active-tab");
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <!-- Reveal Animation -->
+    <script>
+      const reveals = document.querySelectorAll(".reveal");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) entry.target.classList.add("active");
+          });
+        },
+        { threshold: 0.2 },
+      );
+      reveals.forEach((el) => observer.observe(el));
+    </script>
+    <script>
+      window.addEventListener("scroll", function () {
+        const nav = document.querySelector(".navbar");
+        nav.classList.toggle("scrolled", window.scrollY > 60);
+      });
+    </script>
+    <script>
+      let titleTexts = ["Adil Inamdar", "Web Developer", "Portfolio"];
+      let counter = 0;
+      setInterval(() => {
+        document.title = titleTexts[counter % titleTexts.length];
+        counter++;
+      }, 2000);
+    </script>
+    <script>
+      const icons = ["images/favicon1.png", "images/favicon2.png"];
+      let i = 0;
+      setInterval(() => {
+        document.querySelector("link[rel='icon']").href =
+          icons[i % icons.length];
+        i++;
+      }, 1000);
+    </script>
+  </body>
+</html>
