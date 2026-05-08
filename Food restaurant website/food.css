@@ -135,7 +135,7 @@ li a {
   height: 240px;
   margin-inline: 12px;
 }
-.blog {
+.blogs {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;

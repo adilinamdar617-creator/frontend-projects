@@ -1,0 +1,107 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Center Container */
+.calculator-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1e1e2f, #2c2c54);
+}
+
+/* Calculator Box */
+.calculator {
+  background: #222;
+  padding: 20px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 350px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+/* Display */
+.display {
+  background: #000;
+  color: #00ffcc;
+  font-size: 2rem;
+  text-align: right;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow-x: auto;
+}
+
+/* Button Grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+/* Base Button Style */
+.btn {
+  padding: 18px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background: #333;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+/* Hover Effect */
+.btn:hover {
+  background: #444;
+  transform: scale(1.05);
+}
+
+/* Operator Buttons */
+.operator {
+  background: #ff9500;
+  color: white;
+}
+
+.operator:hover {
+  background: #ffa733;
+}
+
+/* Control Buttons (C, Del) */
+.control {
+  background: #ff3b30;
+}
+
+.control:hover {
+  background: #ff5c52;
+}
+
+/* Equals Button */
+.equals {
+  background: #34c759;
+  grid-column: span 1;
+}
+
+.equals:hover {
+  background: #4cd964;
+}
+
+/* Zero Button Wider */
+.zero {
+  grid-column: span 2;
+}
+
+@media (max-width: 400px) {
+  .btn {
+    padding: 14px;
+    font-size: 1rem;
+  }
+
+  .display {
+    font-size: 1.5rem;
+  }
+}
